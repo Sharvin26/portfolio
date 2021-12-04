@@ -1,22 +1,5 @@
 import React, { useState } from 'react';
-
 import * as Styled from './styles';
-
-interface MainNavItem {
-  title: string;
-  slug: string;
-}
-
-const mainNavItems: MainNavItem[] = [
-  {
-    title: 'Resume',
-    slug: '/resume/'
-  },
-  {
-    title: 'Contact Me',
-    slug: '/contact/'
-  }
-];
 
 const MainNav: React.FC = () => {
   const [open, setOpen] = useState(false);
@@ -24,6 +7,12 @@ const MainNav: React.FC = () => {
   return (
     <>
       <Styled.MainNav open={open}>
+        <Styled.MainNavItem
+          to='/know-more'
+          activeClassName="active"
+        >
+          Know More
+        </Styled.MainNavItem>
         <Styled.LinkItem
           rel="noreferrer noopener"
           target="_blank"
@@ -31,16 +20,19 @@ const MainNav: React.FC = () => {
         >
           Blog
         </Styled.LinkItem>
-        {mainNavItems.map((item, index) => (
-          <Styled.MainNavItem
-            key={`nav-item-${index}`}
-            to={item.slug}
-            activeClassName="active"
-            whiletap={{ scale: 0.9 }}
-          >
-            {item.title}
-          </Styled.MainNavItem>
-        ))}
+        <Styled.MainNavItem
+          to='/contact'
+          activeClassName="active"
+        >
+          Contact Me
+        </Styled.MainNavItem>
+        <Styled.LinkItem
+          rel="noreferrer noopener"
+          target="_blank"
+          href="https://mtechzilla.com"
+        >
+          MTechZilla
+        </Styled.LinkItem>
       </Styled.MainNav>
       <Styled.ToogleMainNav open={open} onClick={() => setOpen(!open)}>
         <span />

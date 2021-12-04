@@ -2,19 +2,15 @@ import React from 'react';
 
 import * as Styled from './styles';
 
-interface Props extends Styled.StyledProps {
+interface Props {
   title: string;
 }
 
-const ProgressBar: React.FC<Props> = ({ title, percentage }) => (
+const ProgressBar: React.FC<Props> = ({ title }) => (
   <Styled.ProgressBar>
     <Styled.Content>
       <Styled.Title>{title}</Styled.Title>
-      <Styled.Percentage>{percentage}%</Styled.Percentage>
     </Styled.Content>
-    <Styled.BarWrapper>
-      <Styled.Bar percentage={percentage} />
-    </Styled.BarWrapper>
   </Styled.ProgressBar>
 );
 

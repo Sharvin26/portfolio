@@ -1,7 +1,7 @@
+import { motion } from 'framer-motion';
+import { Link } from 'gatsby';
 import styled from 'styled-components';
 import tw from 'tailwind.macro';
-import { Link } from 'gatsby';
-import { motion } from 'framer-motion';
 
 interface StyledProps {
   open: boolean;
@@ -53,7 +53,7 @@ export const LinkItem = motion.custom(styled.a`
   &:hover:before {
     ${tw`visible`};
     transform: scaleX(1);
-         }
+  }
 `);
 
 export const ToogleMainNav = styled.button<StyledProps>`

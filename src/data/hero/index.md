@@ -1,8 +1,8 @@
 ---
 category: 'hero section'
-title: 'Software Developer'
+title: 'CEO, MTechZilla'
 subtitle: 'Engineer by choice and passion'
-content: "I am an ambivert geek who has been working in Software Development for the past two years. I am a big fan of JavaScript, TypeScript, and Python programming language. I prefer ReactJS/NextJS for building frontend, Redux for managing state, and Express/flask for developing web API. I love to share my development experiences via articles, and you can find them published under the FreeCodeCamp News domain. I am a big fan of Marvel comics."
-linkTo: '/resume/'
+content: "I am an ambivert geek who has been working in Software Development for the past four years. I am a big fan of JavaScript and TypeScriprt. I prefer ReactJS/NextJS for building frontend, React-Query and Redux for managing state, and Express for developing web API. I love to share my development experiences via articles, and you can find them published under the FreeCodeCamp News domain. I am a big fan of Marvel comics."
+linkTo: '/know-more'
 linkText: 'Know more about me'
 ---

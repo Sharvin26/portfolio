@@ -19,11 +19,11 @@ export const Bar = styled.div<StyledProps>`
 `;
 
 export const Content = styled.div`
-  ${tw`w-full flex justify-between`};
+  ${tw`w-full border-2 p-2 rounded-lg hover:bg-gray-200 cursor-pointer`};
 `;
 
 export const Title = styled.h3`
-  ${tw`font-semibold`};
+  ${tw`font-semibold  text-center`};
 `;
 
 export const Percentage = styled.h3`
